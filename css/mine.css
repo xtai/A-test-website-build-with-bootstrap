@@ -1,0 +1,145 @@
+/*Xiaoyu Tai CSS*/
+/*ONLY for the WEB TECH website*/
+
+/*Global*/
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+.container-narrow {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.navbar-text:hover,
+.navbar-text:focus {
+  text-decoration: none;
+  color: #555555;
+}
+.navbar-text{
+	  display: block;
+	  margin-left: -20px;
+	  font-size: 20px;
+	  font-weight: 200;
+	  color: #777777;
+	  text-shadow: 0 1px 0 #ffffff;
+}
+.marketing {
+  margin-top: 60px;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  text-decoration: none;
+  color: #555;
+}
+.back-to-top{
+  display: block;
+  font-weight: 100;
+  color: #777;
+}
+
+
+/*index front image -index.html*/
+.jumbotron {
+  margin: 60px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/*under constrating progress -index.html*/
+.prog {
+	margin: 20px;
+	text-align: center;
+}
+
+/*avator image -about.html*/
+.ava-image{
+	text-align: center;
+}
+
+/*for code examples -labtasks*/
+.bs-docs-example {
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.bs-docs-example:after {
+  content: "Result";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+.bs-docs-example + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+.bs-docs-example > p:last-child {
+  margin-bottom: 0;
+}
+.bs-docs-example .table,
+.bs-docs-example .progress,
+.bs-docs-example .well,
+.bs-docs-example .alert,
+.bs-docs-example .hero-unit,
+.bs-docs-example .pagination,
+.bs-docs-example .navbar,
+.bs-docs-example > .nav,
+.bs-docs-example blockquote {
+  margin-bottom: 5px;
+}
+.bs-docs-example .pagination {
+  margin-top: 0;
+}
+
+/*lab buttom nav*/
+.bottom-nav:hover,
+.bottom-nav:focus {
+  text-decoration: none;
+  color: #333;
+}
+.bottom-nav{
+	  display: block;
+	  font-size: 20px;
+	  font-weight: 200;
+	  color: #555;
+	  text-shadow: 0 1px 0 #fff;
+}
+
+
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 10px;
+  list-style: none;
+}
+
+
+
+

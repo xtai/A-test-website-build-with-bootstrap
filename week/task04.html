@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab Task 4 - Web Technologies Homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Homework of Web Technologies Course">
+	<meta name="author" content="Xiaoyu Tai, 11110101">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/fontdiao.css" rel="stylesheet">
+    <link href="../css/mine.css" rel="stylesheet">
+    
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <style>
+    p1{
+    	margin-left: 20px;
+    	margin-right: 20px;
+    	background-color: pink;
+    	color: blue;
+    }
+    p2{
+    	margin-left: 30px;
+    	margin-right: 30px;
+    	background-color: black;
+    	color: yellow;
+    }
+    p3{
+    	margin-left: 1em;
+    	background-color: green;
+    	color: white;
+    }
+    .car-compact{
+      background-color: #FAA;
+    }
+    .car-midsize{
+      background-color: #77F;
+    }
+    .car-sports{
+      background-color: #F55;
+    }
+    </style>
+
+  </head>
+  <body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-narrow">
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="../index.html"><i class="icon-home"></i></a></li>
+            <li class="active"><a href="../homework.html">Homework</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+          <a class="navbar-text pull-right" href="index.html">Web Technologies Homework</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row-fluid" style="margin-top: 40px;">
+    <div class="span6">
+      <h1>Lab Task 4</h1>
+    </div>
+    <div class="span6">
+      <br />
+      <div class="btn-group  pull-right">
+        <button class="btn btn-success">Status: Finished</button>
+        <a class="btn" href="http://msem.bjut.edu.cn:8080/course/web/labtask04.html">Assignment: 层叠样式表</a>
+      </div>
+    </div>
+  </div>
+   
+  <hr />
+  
+  <h3 id="1">第二章9，14题；第三章5，6题</h3>
+  <ul class="nav nav-pills">
+    <li><a href="#1">Chpt.2-9</a></li>
+    <li><a href="#2">Chpt.2-14</a></li>
+    <li><a href="#3">Chpt.3-5</a></li>
+    <li><a href="#4">Chpt.3-6</a></li>
+  </ul>
+  <h4>Chpt.2-9</h4>
+  <div class="bs-docs-example">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th></th>
+      	<th>Average Height</th>
+      	<th>Average Width</th>
+      	<th>Typical Life Span</th>
+      	<th>Leaf Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Pine</td>
+      	<td>2 m</td>
+      	<td>0.5 m</td>
+      	<td>10 years</td>
+      	<td>Square</td>
+      </tr>
+      <tr>
+        <td>Maple</td>
+      	<td>15 m</td>
+      	<td>5 m</td>
+      	<td>120 years</td>
+      	<td>Square</td>
+      </tr>
+      <tr>
+      	<td>Oak</td>
+      	<td>20 m</td>
+      	<td>2 m</td>
+      	<td>130 years</td>
+      	<td>Square</td>
+      </tr>
+      <tr>
+      	<td>Pine</td>
+      	<td>30 m</td>
+      	<td>10 m</td>
+      	<td>200 years</td>
+      	<td>Circle</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+<pre class="prettyprint linenums">
+&lt;table class="table table-bordered table-striped"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Average Height&lt;/th&gt;
+      &lt;th&gt;Average Width&lt;/th&gt;
+      &lt;th&gt;Typical Life Span&lt;/th&gt;
+      &lt;th&gt;Leaf Type&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pine&lt;/td&gt;
+      &lt;td&gt;2 m&lt;/td&gt;
+      &lt;td&gt;0.5 m&lt;/td&gt;
+      &lt;td&gt;10 years&lt;/td&gt;
+      &lt;td&gt;Square&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Maple&lt;/td&gt;
+      &lt;td&gt;15 m&lt;/td&gt;
+      &lt;td&gt;5 m&lt;/td&gt;
+      &lt;td&gt;120 years&lt;/td&gt;
+      &lt;td&gt;Square&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Oak&lt;/td&gt;
+      &lt;td&gt;20 m&lt;/td&gt;
+      &lt;td&gt;2 m&lt;/td&gt;
+      &lt;td&gt;130 years&lt;/td&gt;
+      &lt;td&gt;Square&lt;/td&gt;
+    &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;Pine&lt;/td&gt;
+      &lt;td&gt;30 m&lt;/td&gt;
+      &lt;td&gt;10 m&lt;/td&gt;
+      &lt;td&gt;200 years&lt;/td&gt;
+      &lt;td&gt;Circle&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;<div id="2"></div>
+</pre>
+  
+  <p><a href="#" class="back-to-top pull-right">回顶部&#8593;</a></p>
+  <br />
+  <h4>Chpt.2-14</h4>
+  <div class="bs-docs-example">
+    <p>a.</p>
+    <input type="text" placeholder="这个文本框用于收集用户姓名" />
+    <hr />
+    <p>b.</p>
+    <label class="checkbox">
+      <input type="checkbox" value="">i. Four 100-watt light bulbs for $2.39
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" value="">ii. Eight 100-watt light bulbs for $4.29
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" value="">iii. Four 100-watt, long-life light bulbs for $3.95
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" value="">iv. Eight 100-watt, long-life light bulbs for $7.49
+    </label>
+    <hr />
+    <p>c.</p>
+    <label class="radio">
+      <input type="radio" name="card" value="option1" checked>i. Visa
+    </label>
+    <label class="radio">
+      <input type="radio" name="card" value="option2">ii. Master Card
+    </label>
+    <label class="radio">
+      <input type="radio" name="card" value="option3">iii. Discover
+    </label>    
+  </div>
+<pre class="prettyprint linenums">
+&lt;p&gt;a.&lt;/p&gt;
+&lt;input type="text" placeholder="这个文本框用于收集用户姓名" /&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;b.&lt;/p&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;i. Four 100-watt light bulbs for $2.39
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;ii. Eight 100-watt light bulbs for $4.29
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;iii. Four 100-watt, long-life light bulbs for $3.95
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;iv. Eight 100-watt, long-life light bulbs for $7.49
+&lt;/label&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;c.&lt;/p&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="card" value="option1" checked&gt;i. Visa
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="card" value="option2"&gt;ii. Master Card
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="card" value="option3"&gt;iii. Discover
+&lt;/label&gt;<div id="3"></div>
+</pre>
+
+  <p><a href="#" class="back-to-top pull-right">回顶部&#8593;</a></p>
+  <br />
+  <h4>Chpt.3-5</h4>
+  <div class="bs-docs-example">
+    <p>
+      <p1>
+      	这是第一段 描述城市？
+      </p1>
+      <br />
+      <p2>
+      	这是第二段 北京是中国的首都
+      </p2>
+      <br />
+      <p3>
+      	这是第三段 中国的首都是北京
+      </p3>
+      <br />
+      <p1>
+      	这是第四段 北京空气不好
+      </p1>
+      <br />
+      <p2>
+      	这是第五段 北京是个大城市
+      </p2>
+      <br />
+      <p3>
+      	这是第六段 春节时的北京最好了! [这些颜色真难看!!!]
+      </p3>
+    </p>
+  </div>
+<div class="row-fluid">
+<div class="span6">
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;p&gt;
+  &lt;p1&gt;
+    这是第一段 描述城市？
+  &lt;/p1&gt;
+  &lt;br /&gt;
+  &lt;p2&gt;
+    这是第二段 北京是中国的首都
+  &lt;/p2&gt;
+  &lt;br /&gt;
+  &lt;p3&gt;
+    这是第三段 中国的首都是北京
+  &lt;/p3&gt;
+  &lt;br /&gt;
+  &lt;p1&gt;
+    这是第四段 北京空气不好
+  &lt;/p1&gt;
+  &lt;br /&gt;
+  &lt;p2&gt;
+    这是第五段 北京是个大城市
+  &lt;/p2&gt;
+  &lt;br /&gt;
+  &lt;p3&gt;
+    这是第六段 春节时的北京最好了! [这些颜色真难看!!!]
+  &lt;/p3&gt;
+&lt;/p&gt;<div id="4"></div>
+</pre>
+</div>
+<div class="span6">
+<h6>CSS</h6>
+<pre class="prettyprint linenums">
+p1{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: pink;
+  color: blue;
+}
+p2{
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: black;
+  color: yellow;
+}
+p3{
+  margin-left: 1em;
+  background-color: green;
+  color: white;
+}
+</pre>
+</div>
+</div>
+</div>
+
+  <p><a href="#" class="back-to-top pull-right">回顶部&#8593;</a></p>
+  <br />
+  <h4>Chpt.3-6</h4>
+  <div class="bs-docs-example">
+    <h1>Cars</h1>
+    <ol type="I">
+      <li class="car-compact">Compact
+      	<ol type="A">
+      	  <li>Two Doors
+      	  <ol>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	    <li>Mercedes-Benz C301</li>
+      	  </ol>
+      	  </li>
+      	  <li>Four Doors
+      	  <ol>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	    <li>Mercedes-Benz C301</li>
+      	    <li>Mercedes-Benz C301</li>
+      	  </ol>
+      	  </li>
+      	</ol>
+      </li>
+      <li class="car-midsize">Midsize
+      	<ol type="A">
+      	  <li>Two Doors
+      	  <ol>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	    <li>Mercedes-Benz C301</li>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	    <li>Mercedes-Benz C301</li>
+      	  </ol>
+      	  </li>
+      	  <li>Four Doors
+      	  <ol>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	    <li>Mercedes-Benz C301</li>
+      	    <li>BMW 320i</li>
+      	    <li>Smart</li>
+      	  </ol>
+      	  </li>
+      	</ol>
+      </li>
+      <li class="car-sports">Sports
+      	<ol type="A">
+      	  <li>Coupe
+      	  <ol>
+      	    <li>BMW M3</li>
+      	    <li>Lamborghini Gallardo</li>
+      	    <li>Nissan GTR</li>
+      	  </ol>
+      	  </li>
+      	  <li>Convertible
+      	  <ol>
+      	    <li>BMW Z4</li>
+      	    <li>Ferrari Enzo</li>
+      	    <li>Mercedes-Benz SLS AMG</li>
+      	  </ol>
+      	  </li>
+      	</ol>
+      </li>
+    </ol>
+  </div>
+<div class="row-fluid">
+<div class="span6">
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;h1&gt;Cars&lt;/h1&gt;
+&lt;ol type="I"&gt;
+  &lt;li class="car-compact"&gt;Compact
+  &lt;ol type="A"&gt;
+    &lt;li&gt;Two Doors
+    &lt;ol&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Four Doors
+    &lt;ol&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li class="car-midsize"&gt;Midsize
+  &lt;ol type="A"&gt;
+    &lt;li&gt;Two Doors
+    &lt;ol&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Four Doors
+    &lt;ol&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz C301&lt;/li&gt;
+      &lt;li&gt;BMW 320i&lt;/li&gt;
+      &lt;li&gt;Smart&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li class="car-sports"&gt;Sports
+  &lt;ol type="A"&gt;
+    &lt;li&gt;Coupe
+    &lt;ol&gt;
+      &lt;li&gt;BMW M3&lt;/li&gt;
+      &lt;li&gt;Lamborghini Gallardo&lt;/li&gt;
+      &lt;li&gt;Nissan GTR&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Convertible
+    &lt;ol&gt;
+      &lt;li&gt;BMW Z4&lt;/li&gt;
+      &lt;li&gt;Ferrari Enzo&lt;/li&gt;
+      &lt;li&gt;Mercedes-Benz SLS AMG&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+</div>
+<div class="span6">
+<h6>CSS</h6>
+<pre class="prettyprint linenums">
+.car-compact{
+  background-color: #FAA;
+}
+.car-midsize{
+  background-color: #77F;
+}
+.car-sports{
+  background-color: #F55;
+}
+</pre>
+</div>
+</div>
+</div>
+
+  <p><a href="#" class="back-to-top pull-right">回顶部&#8593;</a></p>
+  <br />
+  <hr />
+
+  <ul class="breadcrumb">
+    <li><a href="../index.html">Home</a> <span class="divider">/</span></li>
+    <li><a href="../homework.html">Homework</a> <span class="divider">/</span></li>
+    <li class="active">Lab Task 4</li>
+    <br />
+    <br />
+    <div class="row-fluid">
+    	<div class="span4">
+    		<p><a href="../homework.html" class="bottom-nav">Homework</a></p>
+    		<ul class="unstyled">
+    		  <li><a href="task01.html" class="bottom-nav-text">Lab Task 1</a></li>
+    		  <li><a href="task02.html" class="bottom-nav-text">Lab Task 2</a></li>
+    		  <li><a href="task03.html" class="bottom-nav-text">Lab Task 3</a></li>
+    		  <li>Lab Task 4</li>
+    		  <li><a href="task05.html" class="bottom-nav-text">Lab Task 5</a></li>
+    		  <li><a href="task06.html" class="bottom-nav-text">Lab Task 6</a></li>
+    		  <li><a href="task07.html" class="bottom-nav-text">Lab Task 7</a></li>
+    		  <li><a href="task08.html" class="bottom-nav-text">Lab Task 8</a></li>
+    		</ul>
+    	</div>
+    	<div class="span4">
+    		<p><a href="http://msem.bjut.edu.cn:8080/course/web/index.html" class="bottom-nav">Assigment</a></p>
+    		<ul class="unstyled">
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask01.html" class="bottom-nav-text">了解web开发</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask02.html" class="bottom-nav-text">网页制作与编辑</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask03.html" class="bottom-nav-text">HTML基础（2）</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask04.html" class="bottom-nav-text">层叠样式表</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask05.html" class="bottom-nav-text">JavaScript基础</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask06.html" class="bottom-nav-text">JavaScript与XHTML</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask07.html" class="bottom-nav-text">利用JavaScript开发动态文档</a></li>
+    			<li><a href="http://msem.bjut.edu.cn:8080/course/web/labtask08.html" class="bottom-nav-text">Servlet编程</a></li>
+    		</ul>
+    	</div>
+    	<div class="span4">
+    		<p><a href="../about.html" class="bottom-nav">About Me</a></p>
+    	</div>
+    </div>
+    <br />
+  </ul>
+  
+
+  <hr />
+
+  <div class="row-fluid">
+    <div class="span6">
+      <p>&copy; <a href="../about.html">Xiaoyu Tai</a> 2013</p>
+    </div>
+    <div class="span6">
+      <p class="text-right">Thanks to the <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> Project</p>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/prettify.js"></script>
+  <script src="../js/application.js"></script>
+  </body>
+</html>
