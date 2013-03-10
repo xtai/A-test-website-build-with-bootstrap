@@ -132,12 +132,23 @@ body {
 	  text-shadow: 0 1px 0 #fff;
 }
 
-
-
 ul.unstyled,
 ol.unstyled {
   margin-left: 10px;
   list-style: none;
+}
+
+/*about*/
+.about-text{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.25;
+}
+
+blockquote.about-qtext p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.25;
 }
 
 
