@@ -38,6 +38,7 @@ body {
   color: #555;
 }
 .back-to-top{
+  margin-top: -10px;
   display: block;
   font-weight: 100;
   color: #777;
