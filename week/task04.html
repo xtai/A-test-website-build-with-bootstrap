@@ -86,6 +86,8 @@
   <ul class="nav nav-pills">
     <li><a href="#1">Chpt.2-9</a></li>
     <li><a href="#2">Chpt.2-14</a></li>
+    <li><a href="#n1">Chpt.3-2</a></li>
+    <li><a href="#n2">Chpt.3-4</a></li>
     <li><a href="#3">Chpt.3-5</a></li>
     <li><a href="#4">Chpt.3-6</a></li>
   </ul>
@@ -240,7 +242,118 @@
 &lt;/label&gt;
 &lt;label class="radio"&gt;
   &lt;input type="radio" name="card" value="option3"&gt;iii. Discover
-&lt;/label&gt;<div id="3"></div>
+&lt;/label&gt;<div id="n1"></div>
+</pre>
+
+<p class="back-to-top"><a href="#" class="back-to-top pull-right">回顶部 <i class="icon-arrow-up"></i></a></p>
+  <br />
+  <h4>Chpt.3-2</h4>
+  <div class="bs-docs-example">
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+        	<th style="font-family: cursive; color: blue;">Team A</th>
+        	<th style="font-family: cursive; color: purple;">Team B</th>
+        	<th style="font-family: cursive; color: pink;">Team C</th>
+        	<th style="font-family: cursive; color: gray;">Team D</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="font-family: cursive; color: blue;">Team A</td>
+        	<td>x</td>
+        	<td><span style="font-size: 20px;">1</span>:0</td>
+        	<td><span style="font-size: 20px;">3</span>:2</td>
+        	<td>1:<span style="font-size: 20px;">2</span></td>
+        </tr>
+        <tr>
+          <td style="font-family: cursive; color: purple ;">Team B</td>
+        	<td>0:<span style="font-size: 20px;">1</span></td>
+        	<td>x</td>
+        	<td><span style="font-size: 20px;">3</span>:0</td>
+        	<td><span style="font-size: 20px;">3</span>:0</td>
+        </tr>
+        <tr>
+        	<td style="font-family: cursive; color: pink;">Team C</td>
+        	<td>2:<span style="font-size: 20px;">3</span></td>
+        	<td>2 m</td>
+        	<td>0:<span style="font-size: 20px;">3</span></td>
+        	<td><span style="font-size: 20px;">0</span>:0</td>
+        </tr>
+        <tr>
+        	<td style="font-family: cursive; color: gray;">Team D</td>
+        	<td><span style="font-size: 20px;">2</span>:1</td>
+        	<td>0:<span style="font-size: 20px;">3</span></td>
+        	<td><span style="font-size: 20px;">0</span>:0</td>
+        	<td>x</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+<pre class="prettyprint linenums">
+&lt;table class="table"&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+    	&lt;th style="font-family: cursive; color: blue;"&gt;Team A&lt;/th&gt;
+    	&lt;th style="font-family: cursive; color: purple;"&gt;Team B&lt;/th&gt;
+    	&lt;th style="font-family: cursive; color: pink;"&gt;Team C&lt;/th&gt;
+    	&lt;th style="font-family: cursive; color: gray;"&gt;Team D&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+        &lt;td style="font-family: cursive; color: blue;"&gt;Team A&lt;/td&gt;
+    	&lt;td&gt;x&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;1&lt;/span&gt;:0&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;:2&lt;/td&gt;
+    	&lt;td&gt;1:&lt;span style="font-size: 20px;"&gt;2&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="font-family: cursive; color: purple ;"&gt;Team B&lt;/td&gt;
+     	&lt;td&gt;0:&lt;span style="font-size: 20px;"&gt;1&lt;/span&gt;&lt;/td&gt;
+    	&lt;td&gt;x&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;:0&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;:0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    	&lt;td style="font-family: cursive; color: pink;"&gt;Team C&lt;/td&gt;
+    	&lt;td&gt;2:&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;&lt;/td&gt;
+    	&lt;td&gt;2 m&lt;/td&gt;
+    	&lt;td&gt;0:&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;0&lt;/span&gt;:0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       	&lt;td style="font-family: cursive; color: gray;"&gt;Team D&lt;/td&gt;
+       	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;2&lt;/span&gt;:1&lt;/td&gt;
+       	&lt;td&gt;0:&lt;span style="font-size: 20px;"&gt;3&lt;/span&gt;&lt;/td&gt;
+    	&lt;td&gt;&lt;span style="font-size: 20px;"&gt;0&lt;/span&gt;:0&lt;/td&gt;
+    &lt;td&gt;x&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;<div id="n2"></div>
+</pre>
+
+  <p class="back-to-top"><a href="#" class="back-to-top pull-right">回顶部 <i class="icon-arrow-up"></i></a></p>
+  <br />
+  <h4>Chpt.3-4</h4>
+  <div class="bs-docs-example">
+  <p style="float: left; font-size: 30px; color: gray; background-color: #F66;">
+  一小段文字在左边~
+  </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam. Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incom dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda et tam. Neque pecun modut est neque nonor et imper ned libidig met, consectetur adipiscing elit, sed ut labore et dolore magna aliquam is nostrud exercitation ullam mmodo consequet. Duis aute in voluptate velit esse cillum dolore eu fugiat nulla pariatur. At vver eos et accusam dignissum qui blandit est praesent. Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo immoriatoly, hawrgaxeeis phat eit sakem eit vory gast te Plok peish ba useing phen roxas. Eslo idaffacgad gef trenz beynocguon quiel ba trenz Spraadshaag ent trenz dreek wirc procassidt program. Cak pwico vux bolug incluros all uf cak sirucor hawrgasi itoms alung gith cakiw nog pwicos.
+        </p>
+  </div>
+<pre class="prettyprint linenums">
+&lt;p style="float: left; font-size: 30px; color: gray; background-color: #F66;"&gt;
+  一小段文字在左边~
+&lt;/p&gt;
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam. Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incom dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda et tam. Neque pecun modut est neque nonor et imper ned libidig met, consectetur adipiscing elit, sed ut labore et dolore magna aliquam is nostrud exercitation ullam mmodo consequet. Duis aute in voluptate velit esse cillum dolore eu fugiat nulla pariatur. At vver eos et accusam dignissum qui blandit est praesent. Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo immoriatoly, hawrgaxeeis phat eit sakem eit vory gast te Plok peish ba useing phen roxas. Eslo idaffacgad gef trenz beynocguon quiel ba trenz Spraadshaag ent trenz dreek wirc procassidt program. Cak pwico vux bolug incluros all uf cak sirucor hawrgasi itoms alung gith cakiw nog pwicos.
+&lt;/p&gt;<div id="3"></div>
 </pre>
 
   <p class="back-to-top"><a href="#" class="back-to-top pull-right">回顶部 <i class="icon-arrow-up"></i></a></p>
