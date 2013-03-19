@@ -27,41 +27,14 @@ body > .navbar .brand:hover {
   color: #333;
 }
 
-@media (max-width: 980px) {
-body > .navbar-fixed-top{
-  margin-left: -20px;
-  margin-right: -20px;	
-}
 
-body > .navbar-fixed-top .brand {
-  float: left;
-  margin-left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-body{
-	padding-top: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-}
 
 
 .marketing {
   margin-top: 60px;
 }
 
-.back-to-top:hover,
-.back-to-top:focus {
-  text-decoration: none;
-  color: #555;
-}
-.back-to-top{
-  margin-top: -10px;
-  display: block;
-  font-weight: 100;
-  color: #777;
-}
+
 
 
 /*index front image -index.html*/
@@ -173,6 +146,47 @@ blockquote.about-qtext p{
 }
 
 
+#backt{
+    position:fixed;
+    right: 6%;
+}
+#backt a{
+  font-weight: 100;
+  color: #777;
+}
+#backt a:hover,
+#backt a:focus {
+  text-decoration: none;
+  color: #555;
+}
+
+@media (max-width: 1280px) {
+  #backt{
+      position:fixed;
+      right: 10px;
+  }
+}
 
 
+@media (max-width: 980px) {
+  body > .navbar-fixed-top{
+    margin-left: -20px;
+    margin-right: -20px;	
+  }
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body{
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
 
+  #backt{
+    position:fixed;
+    right: 3px;
+  }
+}
