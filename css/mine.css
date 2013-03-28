@@ -160,6 +160,7 @@ blockquote.about-qtext p{
   color: #555;
 }
 
+
 @media (max-width: 1280px) {
   #backt{
       position:fixed;

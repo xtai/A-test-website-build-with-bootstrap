@@ -52,22 +52,158 @@
     <div class="span6">
       <br />
       <div class="btn-group  pull-right">
-        <button class="btn btn-warning">Status: Coding</button>
+        <button class="btn btn-success">Status: Finshed</button>
         <a class="btn" href="http://msem.bjut.edu.cn:8080/course/web/labtask06.html">Assignment: JavaScript与XHTML</a>
       </div>
     </div>
   </div>
    
   <hr />
-  
-  <div class="hero-unit">
-      <h1>Coding...</h1>
-      <br />
-      <p>Well, working on it right now!</p>
-      <div class="progress progress-warning progress-striped active">
-        <div class="bar" style="width: 10%;"></div>
+
+<h3 id="1">第五章1，3题</h3>
+  <ul class="nav nav-pills">
+    <li><a href="#1">Chpt.5-1</a></li>
+    <li><a href="#2">Chpt.5-3</a></li>
+  </ul>
+
+  <h4>Chpt.5-1</h4>
+  <div class="bs-docs-example">
+    <p style="font-size: 20px;">Favorite Color?</p>
+      <label class="radio">
+        <input type="radio" name="colorChoice" id="colorChoice1" value="1" onclick="r(1)">
+        <span style="color: red;">Red</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="colorChoice" id="colorChoice2" value="2" onclick="r(2)">
+        <span style="color: blue;">Blue</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="colorChoice" id="colorChoice3" value="3" onclick="r(3)">
+        <span style="color: green;">Green</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="colorChoice" id="colorChoice4" value="4" onclick="r(4)">
+        <span style="color: yellow;">Yellow</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="colorChoice" id="colorChoice5" value="5" onclick="r(5)">
+        <span style="color: orange;">Orange</span>
+      </label>
+      <p style="font-size: 20px; padding-top: 10px;">Favorite Color: <span class="5-1"></span></p>
+  </div>
+<h6>JavaScript</h6>
+<pre class="prettyprint linenums">
+/* 为了更便捷地操纵DOM，本题利用了JQuery*/
+function r(i) {
+  switch (i) {
+    case 1:
+      $('.5-1').text('Red');
+      break;
+    case 2:
+      $('.5-1').text('Blue');
+      break;
+    case 3:
+      $('.5-1').text('Green');
+      break;
+    case 4:
+      $('.5-1').text('Yellow');
+      break;
+    case 5:
+      $('.5-1').text('Orange');
+      break;
+    default:
+      $('.5-1').text('None');	
+      break;
+  }
+}
+</pre>
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;p style="font-size: 20px;"&gt;Favorite Color?&lt;/p&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="colorChoice" id="colorChoice1" value="1" onclick="r(1)"&gt;
+  &lt;span style="color: red;"&gt;Red&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="colorChoice" id="colorChoice2" value="2" onclick="r(2)"&gt;
+  &lt;span style="color: blue;"&gt;Blue&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="colorChoice" id="colorChoice3" value="3" onclick="r(3)"&gt;
+  &lt;span style="color: green;"&gt;Green&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="colorChoice" id="colorChoice4" value="4" onclick="r(4)"&gt;
+  &lt;span style="color: yellow;"&gt;Yellow&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="colorChoice" id="colorChoice5" value="5" onclick="r(5)"&gt;
+  &lt;span style="color: orange;"&gt;Orange&lt;/span&gt;
+&lt;/label&gt;
+&lt;p style="font-size: 20px; padding-top: 10px;"&gt;Favorite Color: &lt;span class="5-1"&gt;&lt;/span&gt;&lt;/p&gt;
+<div id="2"></div>
+</pre>
+
+  <br />
+  <h4>Chpt.5-3</h4>
+  <div class="bs-docs-example">
+  <div class="5-3">
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Total Price</h3>
       </div>
-  </div> 
+      <div class="modal-body">
+        <p>Total: $<span class="5-3-t"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Ok</button>
+      </div>
+    </div>
+    <p>Wanna buy something?</p>
+    <label class="checkbox">
+      <input type="checkbox" id="inlineCheckbox1" value="option1" onclick="s(0.59,1)"> Apple $0.59
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="inlineCheckbox2" value="option2" onclick="s(0.49,2)"> Orange $0.49
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="inlineCheckbox3" value="option3" onclick="s(0.39,3)"> Banana $0.39
+    </label>
+    <a href="#myModal" role="button" class="btn" data-toggle="modal" onclick="c()">Calculate</a>
+  </div>
+  </div>
+<h6>JavaScript</h6>
+<pre class="prettyprint linenums">
+var sum=0;
+function s(i,j) {
+	var ele = document.getElementById('inlineCheckbox'+j);
+	if (ele.checked) {
+	    sum+=i;
+	}else{
+	    sum-=i;
+	}
+}
+function c(){
+  $('.5-3-t').text(sum*1.05);
+}
+</pre>
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;p&gt;Wanna buy something?&lt;/p&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1" onclick="s(0.59,1)"&gt; Apple $0.59
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2" onclick="s(0.49,2)"&gt; Orange $0.49
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3" onclick="s(0.39,3)"&gt; Banana $0.39
+&lt;/label&gt;
+&lt;a href="#myModal" role="button" class="btn" data-toggle="modal" onclick="c()"&gt;Calculate&lt;/a&gt;
+</pre>
+
 
   <br />
   <hr />
@@ -136,5 +272,43 @@
   <script src="../js/application.js"></script>
   
   <script src="../js/mine.js"></script>
+  
+  <script type="text/javascript">
+  function r(i) {
+    switch (i) {
+    	case 1:
+    		$('.5-1').text('Red');
+    		break;
+    	case 2:
+    		$('.5-1').text('Blue');
+    		break;
+    	case 3:
+    		$('.5-1').text('Green');
+    		break;
+    	case 4:
+    		$('.5-1').text('Yellow');
+    		break;
+    	case 5:
+    		$('.5-1').text('Orange');
+    		break;
+    	default:
+    		$('.5-1').text('None');	
+    		break;
+    }
+  }
+  var sum=0;
+  function s(i,j) {
+  	var ele = document.getElementById('inlineCheckbox'+j);
+  	if (ele.checked) {
+	    sum+=i;
+	}else{
+	    sum-=i;
+	}
+  }
+  function c(){
+    $('.5-3-t').text(sum*1.05);
+  }
+  
+  </script>
   </body>
 </html>
