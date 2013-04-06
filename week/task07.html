@@ -20,8 +20,9 @@
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.js"></script>
-    <![endif]-->
-
+    <![endif]-->    
+    
+    
   </head>
   <body>
 <div class="navbar navbar-fixed-top">
@@ -52,21 +53,161 @@
     <div class="span6">
       <br />
       <div class="btn-group  pull-right">
-        <button class="btn btn-inverse">Status: Undone</button>
+        <button class="btn btn-success">Status: Finished</button>
         <a class="btn" href="http://msem.bjut.edu.cn:8080/course/web/labtask07.html">Assignment: 利用JavaScript开发动态文档</a>
       </div>
     </div>
   </div>
    
   <hr />
-  
-  <div class="row-fluid">
-    <div class="span12 hero-unit">
-      <h1>Not Start Yet...</h1>
-      <br />
-      <p>Maybe later?</p>
+
+<h3>第六章3，7题</h3>
+  <ul id="1" class="nav nav-pills">
+    <li><a href="#1">Chpt.6-3</a></li>
+    <li><a href="#2">Chpt.6-7</a></li>
+  </ul>
+
+  <h4>Chpt.6-3</h4>
+  <div class="bs-docs-example">
+  <div style="text-align: center;">
+    <p style="font-size: 22px">Photos?</p>
+    <label class="checkbox inline">
+      <input type="checkbox" id="6-3-b1" value="option1" onclick="a(1)"> Photo 1
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" id="6-3-b2" value="option2" onclick="a(2)"> Photo 2
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" id="6-3-b3" value="option3" onclick="a(3)"> Photo 3
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" id="6-3-b4" value="option4" onclick="a(4)"> Photo 4
+    </label>
+    <hr />
+    <img src="../img/45.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-1" />
+    <img src="../img/46.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-2" />
+    <img src="../img/47.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-3" />
+    <img src="../img/48.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-4" />
     </div>
   </div>
+<h6>JavaScript</h6>
+<pre class="prettyprint linenums">
+/* 为了更便捷地操纵DOM，本题利用了JQuery*/
+$(document).ready(function () {
+  $('#6-3-1').hide();
+  $('#6-3-2').hide();
+  $('#6-3-3').hide();
+  $('#6-3-4').hide();  
+});
+function a(i) {
+  var ele = document.getElementById('6-3-b'+i);
+  if (ele.checked) {
+	  $('#6-3-'+i).show();
+  }else{
+    $('#6-3-'+i).hide();
+  }
+}
+</pre>
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;p style="font-size: 20px"&gt;Show Photo ?&lt;/p&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="6-3-b1" value="option1" onclick="a(1)"&gt; Photo 1
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="6-3-b2" value="option2" onclick="a(2)"&gt; Photo 2
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="6-3-b3" value="option3" onclick="a(3)"&gt; Photo 3
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="6-3-b4" value="option4" onclick="a(4)"&gt; Photo 4
+&lt;/label&gt;
+&lt;hr /&gt;
+&lt;img src="../img/45.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-1" /&gt;
+&lt;img src="../img/46.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-2" /&gt;
+&lt;img src="../img/47.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-3" /&gt;
+&lt;img src="../img/48.jpg" class="img-polaroid" style="margin: 10px; width: 200px;" id="6-3-4" /&gt;
+&lt;/div&gt;<div id="2"></div>
+</pre>
+
+<br />
+
+<h4>Chpt.6-7</h4>
+<div class="bs-docs-example" style="font-size: 20px;" id="6-7">
+  <div style="position: absolute; margin-top: 0px; margin-left: 30px ;margin-right: 20px; z-index: 0; border: 1px solid #AAA; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #f7f7f9;" id="6-7-0" onmouseover="t(0)" onmouseout="t(3)">
+    <p style="color: #03C; margin: 5px;">Seacula quarta decima et quinta decima Eodem typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.</p>
+  </div>
+  <div style="position: absolute; margin-top: 30px; margin-left: 20px; margin-right: 30px; z-index: 1; border: 1px solid #AAA; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #f7f7f9;" id="6-7-1" onmouseover="t(1)" onmouseout="t(3)">
+    <p style="color: #090; margin: 5px;">Seacula quarta decima et quinta decima Eodem typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.</p>
+  </div>
+  <div style="position: absolute; margin-top: 60px; margin-left: 10px; margin-right: 40px; z-index: 2; border: 1px solid #AAA; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #f7f7f9;" id="6-7-2" onmouseover="t(2)" onmouseout="t(3)">
+    <p style="color: #F90; margin: 5px;">Seacula quarta decima et quinta decima Eodem typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.</p>
+  </div>
+  <div style="position: absolute; margin-top: 90px; margin-right: 50px; z-index: 3; border: 1px solid #AAA; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #f7f7f9;" id="6-7-3" onmouseover="t(3)">
+    <p style="color: #C00; margin: 5px;">Seacula quarta decima et quinta decima Eodem typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.</p>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+<h6>JavaScript</h6>
+<pre class="prettyprint linenums">
+/* 为了更便捷地操纵DOM，本题利用了JQuery*/
+function t(i) {
+  switch (i) {
+    case 0: 
+      $('#6-7-0').css({'z-index':'3'});
+      $('#6-7-1').css({'z-index':'0'});
+      $('#6-7-2').css({'z-index':'1'});
+      $('#6-7-3').css({'z-index':'2'});
+      break;
+    case 1: 
+      $('#6-7-0').css({'z-index':'0'});
+      $('#6-7-1').css({'z-index':'3'});
+      $('#6-7-2').css({'z-index':'1'});
+      $('#6-7-3').css({'z-index':'2'});
+      break;
+    case 2: 
+      $('#6-7-0').css({'z-index':'0'});
+      $('#6-7-1').css({'z-index':'1'});
+      $('#6-7-2').css({'z-index':'3'});
+      $('#6-7-3').css({'z-index':'2'});
+      break;
+    case 3: 
+      $('#6-7-0').css({'z-index':'0'});
+      $('#6-7-1').css({'z-index':'1'});
+      $('#6-7-2').css({'z-index':'2'});
+      $('#6-7-3').css({'z-index':'3'});
+      break;
+  }
+</pre>
+<h6>HTML</h6>
+<pre class="prettyprint linenums">
+&lt;div style="position: absolute; margin-top: 0px; z-index: 0;" id="6-7-0" onmouseover="t(0)" onmouseout="t(3)"&gt;
+  &lt;p style="color: #03C;"&gt;Seacula quarta decima et quinta decima Eodem modo typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style="position: absolute; margin-top: 30px; z-index: 1;" id="6-7-1" onmouseover="t(1)" onmouseout="t(3)"&gt;
+  &lt;p style="color: #090;"&gt;Seacula quarta decima et quinta decima Eodem modo typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style="position: absolute; margin-top: 60px; z-index: 2;" id="6-7-2" onmouseover="t(2)" onmouseout="t(3)"&gt;
+  &lt;p style="color: #F90;"&gt;Seacula quarta decima et quinta decima Eodem modo typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style="position: absolute; margin-top: 90px; z-index: 3;" id="6-7-3" onmouseover="t(3)"&gt;
+  &lt;p style="color: #C00;"&gt;Seacula quarta decima et quinta decima Eodem modo typi? Modo typi qui nunc nobis videntur parum clari. Quam littera gothica quam nunc putamus parum claram anteposuerit. Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor placerat fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidunt. Duis montes, tellus lobortis lacus amet arcu et. Curabitur auctor, erat mollis sed fusce, turpis vivamus a dictumst congue magnis. Aliquam amet ullamcorper dignissim molestie, gravida mollis. Tortor vitae lorem ipsum tortor eros wisi facilisis.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
 
   <br />
   <hr />
@@ -133,7 +274,50 @@
   <script src="../js/bootstrap.js"></script>
   <script src="../js/prettify.js"></script>
   <script src="../js/application.js"></script>
-  
   <script src="../js/mine.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $('#6-3-1').hide();
+    $('#6-3-2').hide();
+    $('#6-3-3').hide();
+    $('#6-3-4').hide();  
+  });
+  function a(i) {
+    var ele = document.getElementById('6-3-b'+i);
+    if (ele.checked) {
+  	  $('#6-3-'+i).show();
+    }else{
+      $('#6-3-'+i).hide();
+    }
+  }
+  function t(i) {
+    switch (i) {
+      case 0: 
+        $('#6-7-0').css({'z-index':'3'});
+        $('#6-7-1').css({'z-index':'0'});
+        $('#6-7-2').css({'z-index':'1'});
+        $('#6-7-3').css({'z-index':'2'});
+        break;
+      case 1: 
+        $('#6-7-0').css({'z-index':'0'});
+        $('#6-7-1').css({'z-index':'3'});
+        $('#6-7-2').css({'z-index':'1'});
+        $('#6-7-3').css({'z-index':'2'});
+        break;
+      case 2: 
+        $('#6-7-0').css({'z-index':'0'});
+        $('#6-7-1').css({'z-index':'1'});
+        $('#6-7-2').css({'z-index':'3'});
+        $('#6-7-3').css({'z-index':'2'});
+        break;
+      case 3: 
+        $('#6-7-0').css({'z-index':'0'});
+        $('#6-7-1').css({'z-index':'1'});
+        $('#6-7-2').css({'z-index':'2'});
+        $('#6-7-3').css({'z-index':'3'});
+        break;
+    }
+  }
+  </script>
   </body>
 </html>
